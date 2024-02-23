@@ -1,0 +1,2403 @@
+@font-face{
+	font-family: myFirstFont;
+	src: url(fonts/NHaasGroteskTXPro-55Rg.ttf);
+}
+@font-face{
+	font-family: mySecondFont;
+	src: url(fonts/NHaasGroteskTXPro-65Md.ttf);
+}
+@font-face{
+	font-family: myThirdFont;
+	src: url(fonts/NHaasGroteskTXPro-75Bd.ttf);
+}
+body{
+	padding: 0;
+	margin:0; 
+}
+span{
+	color:#FEC844;
+	font-size: 21px;
+	letter-spacing: 0.42px;
+}
+p{
+	font-family: myFirstFont;
+	font-size: 20px;
+	color:#000;
+}
+h4{
+	font-size: 41px;
+	font-family: myThirdFont;
+	letter-spacing: 0px;
+}
+h5{
+	font-size: 32px !important;
+	font-family: mySecondFont;
+}
+.container-fluid{
+	max-width: 1520px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#toggle{
+	display: none !important;
+	position: relative;
+	width:50px;
+	height:50px;
+	border:none;
+	top: 0px;
+	left:0px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s;
+}
+#toggle::before{
+	content: '';
+	position: absolute;
+	width:28px;
+	height:2px;
+	background: #fff; 
+	transition: 0.2s;
+	transform:translateY(-10px);
+	box-shadow: 0 10px 0 #fff; 
+}
+#toggle.active::before{
+	transform:translateY(0px);
+	box-shadow: 0 0 0 #fff;
+	rotate:45deg;
+}
+#toggle::after{
+	content: '';
+	position: absolute;
+	width:28px;
+	height:2px;
+	background: #fff; 
+	transition: 0.2s;
+	box-shadow: 0 10 0 #fff;
+	transform:translateY(10px); 
+}
+#toggle.active::after{
+	transform:translateY(0px);
+	rotate:-45deg;
+}
+header {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+}
+.navbar button{
+	background:none;
+}
+.navbar-light {
+	position: relative;
+}
+.section-1{
+	background-image: url(images/banner-bg.png);
+	background-position: center; 
+  	background-repeat: no-repeat; 
+  	background-size: cover;
+}
+.navbar button{
+	border:none;
+}
+.email{
+	text-align: end;
+	width:92%;
+}
+.email span{
+	font-size: 15px !important;
+}
+.email p{
+	padding-top: 10px;
+	font-size: 15px;
+	color:#fff;
+	max-width: 1555px;
+}
+header .main-line{
+	content:'';
+	width:2px;
+	height:50px;
+	display: block;
+	background-color: #fff;
+}
+header .line{
+	content:'';
+	width:2px;
+	height:20px;
+	margin-top: 18px;
+	display: block;
+	background-color:  #FEC844;
+}
+header .navbar-brand{
+	margin-right: 8px;
+}
+header .navbar-expand-lg .navbar-nav .nav-link{
+	font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+header .navbar-expand-lg .navbar-nav .nav-item{
+	margin-left: 7px;
+	margin-right: 7px;
+}
+header .navbar-expand-lg .navbar-nav .active{
+	color: #c3a177;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover{
+	color: #c3a177;
+}
+header nav form button{
+	border:2px solid #c3a1778c !important;
+	padding: 0 !important;
+	width: 115px;
+    height: 45px;
+    font-family: myFirstFont !important;
+	color:#fff !important;
+	font-size: 18px!important;
+	border-radius: 0px !important;
+}
+header nav form button .signup_arrow{
+	margin-left: 5px;
+	font-size: 17px;
+}
+header nav form button:hover{
+	border-radius: 2px !important;
+	background-color: #FEC844 !important;
+	color: #000 !important;
+}
+.sub-section-1{
+	margin-top: 13rem;
+    margin-bottom: 8rem;
+    color: white;
+    max-width: 1450px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sub-section-1 .header-banner-img{
+	height:627px;
+	text-align: end;
+}
+.sub-section-1 .header-banner-img img{
+	height:100%;
+}
+.sub-section-1 .header-banner{
+	margin-bottom: 8rem;
+}
+.sub-section-1 .header-banner h1{
+	font-family: mySecondFont;
+	font-size: 61px;
+	letter-spacing: 0.88px;	
+}
+.sub-section-1 .header-banner p{
+	font-size: 21px;
+	color:#fff;
+	margin-right: 170px;
+}
+.sub-section-1 .timeCounter h4 {
+    font-size: 20px;
+    margin-top: 60px;
+    font-family: 'mySecondFont';
+    color: #fff;
+    margin-bottom: 20px;
+}
+.sub-section-1 .timer-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #0b0f17;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.sub-section-1 #timer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.sub-section-1 .number-list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: 18px;
+	color: #FEC844;
+}
+.sub-section-1 .number-list .item {
+	font-family: "Grotesk-medium";
+	width: 87px;
+	height: 60px;
+	background: transparent;
+	margin:auto 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	letter-spacing: 3px;
+	color: #fff;
+	background-color: #FEC844;
+}
+.sub-section-1 .number-list .item:first-child {
+	background: rgb(255,163,93);
+	background: linear-gradient(0deg, rgba(255,87,0,1) 30%, rgba(255,163,93,1) 100%);
+}
+.sub-section-1 .unit-list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.sub-section-1 .unit-list .item {
+	position: relative;
+	width: 87px;
+	margin:auto 7px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 11px;
+	color: #fff;
+	background-color: #FEC844;
+	text-transform: capitalize;
+	flex-direction: column;
+	box-shadow: inset 0px 7px 11px #0b0f17;
+}
+.sub-section-1 .unit-list .item:first-child {
+	background: rgb(255,163,93);
+	background: linear-gradient(0deg, rgba(255,87,0,1) 30%, rgba(255,163,93,1) 100%);
+}
+.sub-section-1 .header-banner .token  .tokens{
+	padding: 9px 16px;
+	font-size: 21px;
+	color:#000;
+	font-family: mySecondFont;
+}
+.sub-section-1 .header-banner .token  .token-card{
+	background-color: #FEC844;
+    margin-right: -14px; 
+}
+.sub-section-1 .header-banner .token-gold{
+	background-color: #fff;
+}
+.sub-section-1 .header-banner button{
+	height: 67px;
+    width: 268px;
+	font-family: mySecondFont;
+    font-size: 24px;
+    border-radius: 0px;
+    padding: 0px !important;
+    background-color: #FEC844;
+    color: #0b0f17;
+    text-transform: uppercase;
+}
+.sub-section-1 .header-banner button .sale{
+	margin-left: 18px;
+    font-size: 22px;
+}
+.section-2{
+	margin-bottom: 10rem;
+}
+.section-2 .our-mission{
+	margin-top: 2rem;
+}
+.section-2 .our-mission h4{
+	width:80%;
+	font-family: myThirdFont;
+	font-size: 60px;
+	color:#000;
+	letter-spacing: 1.2px;
+}
+.section-2 .our-mission-img img{
+	height:570px;
+}
+.section-2 .our-mission-img{
+	position: relative;
+	left: 50px;
+}
+.section-2 .our-mission-img .border{
+	position: absolute;
+    width: 90%;
+    height: 100%;
+    right: 0%;
+    left: 55px;
+    top: 5%;
+    border: 3px solid #FEC844 !important;
+    z-index: -1;
+}
+
+
+.section-3{
+	background-color: #F9F9F9;
+	padding-bottom: 6rem;
+}
+.section-3 .geltum-ecosystem{
+	max-width: 45%;
+	margin:auto;
+}
+.section-3 .geltum-ecosystem h4 span{
+	font-size: 42px !important;
+	font-family: mySecondFont;
+}
+.section-3 .geltum-ecosystem h4{
+	font-size: 42px !important;
+}
+.section-3 .card{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	color:#000;
+	padding: 20px 10px;
+	border-radius:0px !important;
+	background-color: #fff;
+	transition:all 0.3s;
+}
+.section-3 .card:hover{
+	background-color: #000;
+}
+.section-3 .card img{
+	width:60px;
+	margin-bottom: 30px;
+}
+.section-3 .card-footer{
+	background: none;
+	border:none;
+}
+.section-3 .card-footer button{
+	font-family: myFirstFont;
+    font-size: 20px;
+    border:1px solid #fff;
+    border-radius: 0px;
+    padding: 12px 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.section-3 .card:hover {
+	padding: 10px 10px;
+}
+.section-3 .card:hover h5{
+	font-size: 35px !important;
+	color:#fff !important;
+}
+.section-3 .card:hover p{
+	color:#fff !important;
+}
+.section-3 .card button:hover{
+	color: #000;
+	background-color: #fff;	
+}
+.slider-thre{
+	display: none;
+}
+
+.section-4{
+	background-image: url(images/impact-bg.svg);
+	background-repeat: no-repeat;
+ 	background-position: center;
+}
+.section-4 .Impact-Story{
+	width:60%;
+	margin: 6rem auto 10rem;
+	color:#fff;
+}
+.section-4 .Impact-Story span{
+	color:#ff9200;
+	font-family: myFirstFont;
+	font-size: 19px
+}
+.section-4 .Impact-Story h2{
+	font-family: mySecondFont;
+	font-size: 44px;
+}
+.section-4 .Impact-Story p{
+	color:#fff;
+	font-size: 20px;
+	line-height: 38px;
+}
+.section-5{
+	background-color: #F9F9F9;
+	padding-bottom: 218px;
+}
+.section-5 h2{
+	font-size: 50px;
+	font-family: mySecondFont;
+}
+.sub-section-5{
+	margin-top: -220px;
+}
+.sub-section-5 .card{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 0px;
+	padding: 15px;
+}
+.sub-section-5 .card:hover{
+	padding-top: 8px;
+}
+.sub-section-5 .main p{
+	color:#fff;
+}
+.sub-section-5 .card img{
+	width:80px;
+	height:75px;
+}
+.sub-section-5 .card:hover{
+	background-color: #000;
+}
+.sub-section-5 .card:hover h5{
+	color:#fff;
+	font-size: 35px!important;
+}
+.sub-section-5 .card:hover p{
+	color:#fff!important;
+}
+.sub-section-5-slider-four{
+	display: none;
+}
+.section-6{
+	background-color: #000;
+	margin-top: 50px;
+}
+.section-6 .golteum-platform{
+	margin: 65px auto 300px;
+}
+.section-6 .golteum-platform span{
+	font-family: myFirstFont;
+	font-size: 28px !important;
+}
+.section-6 .golteum-platform h4{
+	color:#fff;
+	font-size: 45px!important;
+	font-family: myThirdFont;	
+}
+.section-6 .golteum-platform p{
+	color:#fff;
+	font-size: 24px;
+	font-family: myFirstFont;
+}
+.sub-section-6{
+	margin-top: -195px;
+}
+.sub-section-6 .card{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border-radius: 0px;
+	padding: 10px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sub-section-6 .card img{
+	height:45px;
+	width:55px;
+}
+.sub-section-6 .card h5{
+	font-size: 31px!important;
+    font-family: 'myThirdFont';
+}
+.sub-section-6 .card p{
+	font-size: 22px !important;
+}
+.sub-section-6 .card:hover{
+	background-color: #000;
+}
+.sub-section-6 .card:hover h5{
+	color:#fff;
+}
+.sub-section-6 .card:hover p{
+	color:#fff!important;
+}
+.sub-section-6-slider-five{
+	display: none;
+}
+.section-7{
+	background-color: #000;
+	padding-bottom: 190px;
+	margin-top:100px;
+}
+.section-7 .new-easy-way{
+	margin: 130px auto 50px;
+	color:#fff;
+}
+.section-7 .new-easy-way h4{
+	font-size: 55px !important;
+}
+.section-7 .new-easy-way p{
+	color:#fff;
+	font-size: 25px !important;
+}
+.section-7 .new-easy-way span{
+	font-family: mySecondFont;
+	font-size: 35px !important;
+}
+.section-7 .new-easy-way-img img{
+	margin: 35px auto 60px;
+	width: 740px;
+	height: 450px;
+}
+.sub-section-7{
+	margin-top: -195px;
+}
+.sub-section-7 .golteum-token-card{
+	width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sub-section-7 .card{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	border: none;
+	background-color: #FEC844;
+	border-radius: 20px;
+	padding: 10px;
+}
+.sub-section-7 .card img{
+	width:50px;
+	height:48px;
+}
+.sub-section-7 .card h5{
+	font-size:40px;
+	color:#000;
+}
+.sub-section-7 .card p{
+	font-size:21px;
+}
+.sub-section-7-slider{
+	display: none;
+}
+.section-8{
+	margin-top: 90px;
+	margin-bottom: 40px;
+}
+.section-8 .golteum-token-features h4{
+	font-size: 55px !important;
+	color: #000;
+	font-family: myThirdFont;
+}
+.section-8 .golteum-token-features p{
+	font-size: 30px !important;
+	font-family: myFirstFont;
+}
+.section-9{
+	background-color:#fec844;
+}
+.section-9 .card{
+	border: none;
+	background-color: #fec844;
+	border-radius: 0px;
+	padding:30px 10px 10px 10px;
+}
+.section-9 .card img{
+	width:70px;
+	height:70px;
+}
+.section-9 .card h5{
+	font-size: 27px !important;
+	font-family: myFirstFont;
+}
+.section-9 .card p{
+	font-size: 18px !important;
+}
+.section-9 .card .button{
+	text-align: -webkit-center;
+}
+.section-9 .card button{
+	color:#fec844;
+	background-color: #fec844;
+	padding: 10px 36px;
+    font-size: 20px !important;
+	font-family: mySecondFont;
+	border-radius: 0px;
+}
+.section-9 .card:hover button{
+	color: #000;
+}
+.section-9 .card:hover button i {
+	color: #000;
+}
+.section-9 .card:hover{
+	background-color: #000;
+	color:#fff;
+	padding-top: 10px;
+}
+.section-9 .card:hover p{
+	color:#fff;
+}
+.section-9 .card:hover h5{
+	color:#fff;
+	font-size: 35px !important;
+	font-family: myThirdFont;
+}
+.section-9 .card-footer {
+    border: none;
+    padding: 0px;
+    background: none;
+}
+.section-9-slider{
+	display: none;
+}
+.section-10{
+	padding: 66px 0;
+	background-color: #f9f9f9;
+}
+.section-10 h2{
+	font-family:myThirdFont;
+	font-size: 60px !important;
+	color: #000; 
+	text-align: center;
+}
+.section-10 p{
+	font-family:myFirstFont;
+	font-size: 23px !important;
+	color: #000; 
+	text-align: center;
+	width:46%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section-10 ul{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+.section-10 ul li{
+	list-style: none;
+	padding: 0 8px;
+}
+.section-10 .toke-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0px auto;
+	margin-top: 50px;
+	width: 80%;
+}
+.section-10 .toke-list .list-item {
+	width: 33.33%;
+	font-family: myFirstFont;
+	font-size: 22px;
+	color: #0B0F17;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.section-10 .toke-list .list-item span{
+	font-family: mySecondFont;
+}
+.section-10 .toke-list .list-item img{
+	margin-right: 15px;
+}
+
+.section-10 .image{
+	position: relative;
+	width: 88%;
+	margin: 0 auto;
+}
+.section-10 .image h3{
+	font-family: myThirdFont;
+	font-size: 30px;
+	color: #0b0f17;
+	text-align: center;
+	position: relative;
+	top: 60px;
+}
+.section-10 .image .mobile{
+	display: none;
+}
+.section-10 .chart-image{
+	position: relative;
+	padding-top: 30px;
+}
+.section-10 .chart-image span{
+	position: absolute;
+	color: #0b0f17;
+}
+.section-10 .buyBtn{
+	text-align: center;
+    margin-top: 50px;
+}
+.section-10 .buyBtn a{  
+    font-family: 'mySecondFont';
+    display: inline-block;
+    font-size: 22px;
+    padding: 18px 28px;
+    background-color: #0b0f17;
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.section-10 .buyBtn a:hover{
+	background-color: #FEC844;
+}
+.section-11 {
+	padding: 60px 0 100px;
+}
+.section-11 .distributionInner {
+	padding: 0px 0 60px 0;
+	border-bottom: 1px solid #d8d8d8;
+}
+.section-11 h2 {   
+	font-family: myThirdFont;
+	font-size: 60px;
+	color: #3C5152;
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+.section-11 h2 span {
+	font-family: myThirdFont;
+	color: #FEC844;
+	font-size: 60px !important;
+}
+.section-11 .distributionInner{
+	position: relative;
+	display: flex;
+	padding: 75px 10%;
+}
+.section-11 .distributionInner .detailBlock {
+	position: relative;
+	width: 50%;
+	margin-right: 25px;
+}
+.section-11 .distributionInner .detailBlock .currencies {
+	padding: 5px;
+	border-radius: 30px;
+	background-color:#121826;
+	left: 80%;
+	top: -30px;
+	width: 100%;
+	position: absolute;
+	z-index: 9;
+}
+.section-11 .distributionInner .detailBlock .currencies .head{
+	font-family: myThirdFont;
+	font-size: 22px;
+	background-color: #FEC844;
+	padding: 10px 20px;
+	border-radius: 25px 25px 0 0;
+}
+.section-11 .distributionInner .detailBlock .currencies .icons{
+	display: flex;
+	padding: 10px 20px;
+	border-bottom: 1px solid #41444a ;
+}
+.section-11 .distributionInner .detailBlock .currencies .icons .iconInner{
+	font-size: 16px;
+	color: #fff;
+	margin-right: 8px;
+}
+.section-11 .distributionInner .detailBlock .currencies .icons .iconInner img {
+	margin: 0 2px;
+}
+.section-11 .distributionInner .detailBlock .tagline {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	padding: 5px 0px;
+	border-bottom: 1px solid #41444a;
+}
+.section-11 .distributionInner .detailBlock .taglist {
+	padding: 10px 30px;
+}
+.section-11 .distributionInner .detailBlock .taglist h6 {
+	position: relative;
+	font-family:mySecondFont;
+	font-size: 18px;
+	color: #FEC844;
+	padding-left: 20px;
+}
+.section-11 .distributionInner .detailBlock .taglist h6:before {
+	content: "";
+	width: 7px;
+	height: 7px;
+	background-color: #FF9200;
+	position: absolute;
+	left: 0;
+	border-radius: 50%;
+	top: 5px;
+}
+.section-11 .distributionInner .detailBlock ul {
+	padding: 40px 0;
+	border-radius: 30px;
+	background-color: #FEC844;
+}
+.section-11 .distributionInner .detailBlock ul li {
+	list-style: none;
+	border-bottom: 1px solid #dbad3c;
+	padding: 8px 20px;
+}
+.section-11 .distributionInner .detailBlock ul li:last-child {
+	border: none;
+}
+.section-11 .distributionInner .detailBlock ul li h5 {
+	font-family:mySecondFont;
+	font-size: 18px !important;
+	line-height: 11px;
+	color: #A77F1E;
+}
+.section-11 .distributionInner .detailBlock ul li h3 {
+	font-family: mySecondFont;
+	font-size: 26px;
+	line-height: 18px;
+	color: #0b0f17;
+}
+.section-11 .distributionInner .detailBlock ul li p {
+	font-family:mySecondFont;
+	font-size: 15px;
+	line-height: 11px;
+	color: #0b0f17;
+	margin-bottom: 5px;
+}
+.section-11 .distributionInner .detailTable {
+	position: relative;
+	width: 70%;
+	padding: 85px 10px;
+	box-shadow: 0 0 10px #ccc;
+	margin-top: 125px;
+	background-color: #0b0f17;
+}
+.section-11 .distributionInner .detailTable table {
+	width: 100%;
+	background-color: #0b0f17;
+}
+.section-11 .distributionInner .detailTable tr th{
+	font-family: 'myFirstFont';
+	font-size: 14px;
+	color: #fff;
+	padding: 15px;
+	border-bottom: 1px solid #fff;
+}
+.section-11 .distributionInner .detailTable tr td{
+	font-family: mySecondFont;
+	font-size: 12px;
+	color: #fff;
+	padding: 16px 20px;
+	border-bottom: 1px dashed #fff;
+}
+.section-11 .distributionInner .presaleBtn {
+	position: absolute;
+	bottom: -25px;
+	left: 25px;
+}
+.section-11 .distributionInner .presaleBtn a {
+	position: relative;
+	width: 225px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 22px;
+	font-family: mySecondFont;
+	color: #0b0f17;
+	background-color: #fec844;
+	display: block;
+	padding: 0px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+.section-11 .distributionInner .presaleBtn a:hover {
+	background-color: #FF9200;
+}
+.section-11 .distributionInner .presaleBtn a span.border {
+	width: calc(225px - 40px);
+	height: calc(85px - 30px);
+	border: 1px solid #fff;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	background-image: none;
+}
+.section-11 .distributionInner .presaleBtn a span {
+	width: 10px;
+	height: 14px;
+	background-image: url(images/union.png);
+	display: inline-block;
+	float: right;
+	background-size: cover;
+	position: relative;
+	top: 20px;
+	right: 0px;
+}
+
+.section-12{
+	padding: 30px 0 0px 0;
+    background: linear-gradient(to bottom, #f9f9f9 65%, #fff 30% );
+}
+.section-12 h2 {
+    font-family: myThirdFont;
+    font-size: 63px;
+    line-height: 40px;
+    color: #0b0f17;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section-12 h2 span{
+    font-family: myThirdFont;
+    font-size: 63px;
+    color: #FEC844;
+}
+.section-12 .goldIndustryInner {
+    padding: 0 8%;
+    margin-top: 115px;
+}
+.section-12 .col-lg-4 .block{
+    background-color: #fff;
+    padding: 24px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 8px;
+    height: 100%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.section-12 .col-lg-4:hover .block {
+    margin-top: -81px;
+    background-color: #0b0f17;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.section-12 .col-lg-4 .block .icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.section-12 .col-lg-4 .block .icon-1 {
+    width: 70px;
+    height: 70px;
+    background-image: url(images/industry-1.png);
+}
+.section-12 .col-lg-4 .block .icon-2 {
+    width: 78px; 
+    height: 77px;
+    background-image: url(images/industry-2.png);
+}
+.section-12 .col-lg-4 .block .icon-3 {
+    width: 68px;
+    height: 72px;
+    background-image: url(images/industry-3.png);
+}
+.section-12 .col-lg-4:hover .block .icon-1 {
+    background-image: url(images/industry-1-hover.png);
+}
+.section-12 .col-lg-4:hover .block .icon-2 {
+    background-image: url(images/industry-2-hover.png);
+}
+.section-12 .col-lg-4:hover .block .icon-3 {
+    background-image: url(images/industry-3-hover.png);
+}
+.section-12 .col-lg-4 .block h3{
+    font-family: 'mySecondFont';
+    font-size: 36px !important;
+    color: #0b0f17;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.section-12 .col-lg-4:hover .block h3{
+    color: #fff;
+}
+.section-12 .col-lg-4 .block h4{
+    font-size: 24px !important;
+    color: #0b0f17;
+    margin-bottom: 15px;
+    font-family: 'mySecondFont';
+}
+.section-12 .col-lg-4:hover .block h4{
+    color: #fff;
+}
+.section-12 .col-lg-4 .block p{
+    font-size: 19px !important;
+    color: #707070;
+    margin-bottom: 0px;
+    min-height: 126px;
+}
+.section-12 .col-lg-4:hover .block p{
+    color: #fff;
+}
+.section-12 .col-lg-4 a {
+    width: 70%;
+    font-family: mySecondFont;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0b0f17;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #0b0f17;
+    display: block;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.section-12 .col-lg-4 a:hover {
+    background-color: #0b0f17;
+    color: #fff;
+}
+.section-12 .col-lg-4:hover a {
+    opacity: 1;
+    visibility: visible;
+}
+.section-12 .col-lg-4 a span {
+    width: 10px;
+    height: 14px;
+    background-image: url(images/union.png);
+    display: inline-block;
+    float: right;
+    background-size: cover;
+    position: relative;
+    top: 7px;
+}
+.section-12 .col-lg-4 a:hover span {
+    background-image: url(images/union-white.png);
+}
+.section-13 {
+	margin-top:100px;
+	padding: 50px 0 50px 0;
+	background: linear-gradient(0deg, #0b0f17 65%, #FEC844 35%);
+}
+.section-13 h2 {
+	font-family:myThirdFont;
+	font-size: 65px;
+	color: #0b0f17;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.section-13 h2 span {
+	font-family:myThirdFont;
+	color: #fff;
+	font-size: 65px!important;
+}
+.section-13 .block{
+	width:80%;
+	margin:auto;
+}
+.section-13 .image {
+	max-width: 86%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+}
+.section-13 .image img{
+	width: 315px;
+}
+.section-13 h3{
+font-family:myThirdFont;
+font-size: 21px;
+text-align: center;
+color: #fff;
+margin-top: 40px;
+margin-bottom: 10px;
+}
+.section-13 h4{
+font-family:myThirdFont;
+font-size: 26px !important;
+text-align: center;
+color: #fec844;
+margin-bottom: 10px;
+}
+.section-13 p{
+font-size: 19px;
+text-align: center;
+color: #fff;
+}
+.section-13 .buyBtn{
+text-align: center;
+margin-top: 50px;
+}
+#section-13-slider-slide{
+	display: none;
+}
+.section-14{
+	margin: 100px auto;
+	background-color: #fff;
+}
+.section-14 .partnership span{
+	color:#FF9200 !important;
+	font-size: 20px !important;
+    font-family: 'mySecondFont';
+}
+.section-14 .partnership h4{
+	color:#000 !important;
+	font-size: 60px !important;
+}
+.section-14 .partnership p{
+	width:80%;
+	font-size: 21px !important;
+}
+.section-14 .partnership .card{
+	border-radius: 0px;
+	border:none;
+	background-color: #fff;
+	--bs-card-spacer-x: 0rem !important;
+}
+.section-14 .partnership a{
+	text-decoration: none;
+	color:#000;
+}
+.section-14 .partnership img{
+	margin: auto;
+	width:121px;
+    height:68px;
+}
+.section-15{
+	padding-top: 35px;
+	padding-bottom: 4%; 
+	background: linear-gradient(0deg, #201E40 30%, #0B0F17 100%);
+}
+.section-15 .phase-1{
+	margin-top: 255px;
+    margin-bottom: 85px;
+    margin-left: -110px;
+}
+.section-15 .phase-1 h4{
+	color:#fff !important;
+}
+.section-15 .phase-1 p{
+	color:#fff!important;
+}
+.section-15 .phase-2{
+	margin-top:210px;
+	margin-bottom:75px;
+}
+.section-15 .road-map-card-header{
+	margin-top: 15px;
+}
+.section-15 .road-map-card-header span{
+	font-size: 30px;
+    color: #FEC844;
+    font-family: mySecondFont;
+}
+.section-15 .road-map-card-header h4{
+    font-size: 65px !important;
+    font-family: myThirdFont;
+    color:#fff;
+}
+.section-15 .road-map-card h4{
+	font-size: 38px !important;
+	color:#4B5260;
+	margin-bottom: 2	0px;
+}
+.section-15 .road-map-card p{
+	font-size: 18px;
+	font-family: myFirstFont;
+	color:#4B5260;
+	margin: 0;
+}
+.section-15 .road-map-card .card{
+	border:none;
+}
+.section-15 .road-map-card .card-header{
+	background-color: linear-gradient(0deg, #201E40 30%, #0B0F17 100%);
+	font-size: 30px;
+	padding-left: 0;
+	padding-bottom: 0;
+	color: #5e6676;
+	font-weight: 500;
+}
+.section-15 .road-map-card .list-group .list-group-item{
+	background: linear-gradient(0deg, #201E40 30%, #0B0F17 100%);
+	font-size: 19px;
+	padding:0 0 0px;
+	border-radius: initial;
+	color:#5e6676;
+	font-weight: 500;
+}
+.section-15 .button button{
+	width: 225px;
+    font-size: 18px;
+    color: #0b0f17;
+    background-color: #fec844;
+    border: 1px solid #fec844;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+section.roadMap {
+	display: none;
+    position: relative;
+    padding-bottom: 10%;
+    background: linear-gradient(0deg, #201E40 30%, #0B0F17 100%);
+  }
+  section.roadMap .roadMapInner{
+    padding: 0 10%;
+    background-image: url(../images/Single-Vector.svg);
+    background-position: 43% 13%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+
+  }
+  section.roadMap .roadMapInner .heading {
+    position: relative;
+    padding: 50px 0 23px 30px;
+    border-left: 1px solid #fff;
+    margin-bottom: 150px;
+  }
+  section.roadMap .roadMapInner .heading:before {
+    position: absolute;
+    content: "";
+    left: -2px;
+    top: 50px;
+    width: 4px;
+    height: 84px;
+    background-color: #FEC844;
+    display: block;
+  }
+  section.roadMap .roadMapInner .heading:after {
+    position: absolute;
+    content: "";
+    left: -4px;
+    top: 170px;
+    width: 8px;
+    height: 8px;
+    background-color: #FEC844;
+    display: block;
+    border-radius: 50%;
+  }
+  section.roadMap .roadMapInner .phases .phase3 {
+    margin-left: 40px;
+  }
+  section.roadMap .roadMapInner .heading h3 {
+    font-family: myFirstFont;
+    font-size: 24px;
+    line-height: 27px;
+    color: #FEC844;
+    margin: 0;
+  }
+  section.roadMap .roadMapInner .heading h1 {
+    font-family: mySecondFont;
+    font-size: 55px;
+    line-height: 65px;
+    color: #fff;
+    margin: 0;
+  }
+  section.roadMap .roadMapInner .phases {
+    margin-top: -100px;
+    padding-left: 30px;
+  }
+  section.roadMap .roadMapInner .phases .phase2,
+  section.roadMap .roadMapInner .phases .phase3,
+  section.roadMap .roadMapInner .phases .phase4 {
+    margin-top: 40px;
+  }
+  section.roadMap .roadMapInner .phases .phase4 {
+    margin-left: 20px;
+  }
+  section.roadMap .roadMapInner .phases h3 {
+    font-family: mySecondFont;
+    font-size: 27px;
+    color: #4B5260;
+    margin-bottom: 20px;
+  }
+  section.roadMap .roadMapInner .phases p {
+    font-size: 15px !important;
+    color: #4B5260;
+    margin-bottom: 0px;
+    line-height: 22px;
+  }
+  section.roadMap .roadMapInner .phases .block.active h3{
+    color: #FEC844;
+  }
+  section.roadMap .roadMapInner .phases .block.active p{
+    color: #fff;
+  }
+  section.roadMap .roadMapInner .presaleBtn {
+    position: absolute;
+    text-align: center;
+    bottom: -20px;
+    width: 100%;
+    left: 0;
+  }
+  section.roadMap .roadMapInner .presaleBtn a{
+    font-family: mySecondfont;
+    width: 225px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #0b0f17;
+    background-color: #fec844;
+    border: 1px solid #fec844;
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  }
+  section.roadMap .roadMapInner .presaleBtn a:hover{
+    background-color: #fff;
+    border-color: #0b0f17;
+  }
+   section.roadMap .roadMapInner {
+      background-image: none;
+    }
+    section.roadMap .roadMapInner .phases h3 {
+      margin-top: 30px;
+    }
+    section.roadMap .roadMapInner .phases .phase3 {
+      margin-left: 0;
+    }
+    section.roadMap .roadMapInner .phases .phase2,
+    section.roadMap .roadMapInner .phases .phase4 {
+      margin-left: 40px;
+    }
+    section.roadMap .roadMapInner .phases .block {
+      position: relative;
+      margin-bottom: -7px;
+    }
+    section.roadMap .roadMapInner .phases .block:before {
+      content: "";
+      width: 18px;
+      height: 18px;  
+      background-color: #fff;
+      border: 4px solid #424C61;
+      border-radius: 50%;
+      position: absolute;
+      left: -35px;
+      top: 7px;
+      z-index: 1;
+    }
+    section.roadMap .roadMapInner .phases .block.phase2:before,
+    section.roadMap .roadMapInner .phases .block.phase4:before {
+      left: -75px;
+    }
+    section.roadMap .roadMapInner .phases .block.active:before{
+       border-color: #FEC844;
+       box-shadow: 0 0 10px #FEC844;
+    }
+    section.roadMap .roadMapInner .phases .block:after {
+      content: "";
+      left: -28px;
+      width: 3px;
+      height: 225px;
+      bottom: 96%;
+      background-color: #707070;
+      position: absolute;
+    }
+    section.roadMap .roadMapInner .phases .block.phase2:after,
+    section.roadMap .roadMapInner .phases .block.phase4:after {
+      left: -68px;
+    }
+    section.roadMap .roadMapInner .phases .block.active:after{
+      height: 60px; 
+      background-color: #FEC844;
+      z-index: 1;
+    }
+.section-16 {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #0b0f17;
+}
+.section-16 .card{
+	border:none;
+}
+.section-16 .fotter-token{
+	background-color:#0b0f17; 
+}
+.section-16 a{
+  	font-family: 'myFirstFont';
+    font-size: 21px;
+    color: #fff;
+    text-decoration: none;
+}
+.section-16 a:hover{
+	color:#FEC844;
+}
+.section-16 h2 {
+    font-family: 'mySecondFont';
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.section-16 ul.social {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.section-16 ul.social li {
+    list-style: none;
+    margin-right: 10px;
+}
+.section-16 ul.social li a span {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-size: cover;
+}
+.section-16 ul.social li a.social-1 span {
+    background-image: url(images/Social-Icon-1.png);
+}
+.section-16 ul.social li a.social-2 span {
+	background-image: url(images/Social-Icon-2.png);
+}
+.section-16 ul.social li a.social-3 span {
+    background-image: url(images/Social-Icon-3.png);
+}
+.section-16 ul.social li a.social-4 span {
+	background-image: url(images/Social-Icon-4.png);
+}
+.section-16 ul.social li a.social-1:hover span {
+	background-image: url(images/Social-Icon-1-hover.png);
+}
+.section-16 ul.social li a.social-2:hover span {
+	background-image: url(images/Social-Icon-2-hover.png);
+}
+.section-16 ul.social li a.social-3:hover span {
+	background-image: url(images/Social-Icon-3-hover.png);
+}
+.section-16 ul.social li a.social-4:hover span {
+	background-image: url(images/Social-Icon-4-hover.png);
+}
+.section-16 ul.social li a {
+	background-color: #273041;
+	border-radius: 50%;
+	width: 35px;
+	text-decoration:none; 
+	height: 35px;
+	display: block;
+	padding: 3px 8px;
+	font-size: 19px;
+	color: #fff;
+}
+.section-16 ul.social li a.social-1 {
+	padding: 0;
+}
+.section-16 ul.social li a.social-3 {
+	padding: 3px 10px;
+}
+.section-16 ul.social li a:hover {
+	color: #0B0F17;
+	background-color: #fec844;
+}
+.section-16 .privacy {
+	height: 36px;
+	padding: 5px 10px;
+	border: 1px solid #52555a;
+	margin-left: 20px;
+}
+.section-16 .privacy a {
+	font-size: 19px;
+	text-decoration: none;
+	font-family: myFirstFont;
+    color: #fff;
+    padding: 0 15px;
+    border-right: 1px solid #fff;
+}
+.section-16 .privacy a:hover{
+	color:#FEC844;
+}
+.section-16 .privacy a:last-child {
+	border-right: none;
+}
+footer{
+	padding: 15px 0;
+	background-color: #FEC844;
+}
+footer p{
+	font-family: mySecondFont;
+	font-size: 20px !important;
+	line-height: 24px;
+	color: #0b0f17;
+	margin: 0;
+}
+.golteum-token-card{
+	width:50%;
+}
+.section-17{
+	margin: 30px 0px 70px;
+}
+.section-17 h4{
+	font-size: 65px !important;
+}
+.section-17 .accordion .accordion-item{
+	border-bottom:none;
+	font-size: 14px;
+	color:#000!important;
+}
+.accordion-button:not(.collapsed){
+	background-color: #fff!important;
+}
+.accordion-button:focus{
+	box-shadow: none !important;
+}
+.accordion-button:not(.collapsed){
+	color:#000 !important;
+}
+.section-17 .accordion h2 button{
+	margin-bottom: 12px;
+    font-size: 22px;
+    font-family: 'myFirstFont';
+}
+@media screen and (max-width:1024px){
+	p{
+		font-size: 18px !important;
+	}
+	h5{
+		font-size:26px !important;
+	}
+	header .navbar-expand-lg .navbar-nav .nav-link {
+    	font-size: 15px;
+	}
+	header nav form button {
+	    width: 95px;
+	    height: 38px;
+	    font-size: 15px!important;
+	}
+	.email{
+		width:97%;
+	}
+	.sub-section-1 .header-banner h1 {
+    	font-size: 48px;
+	}
+	.sub-section-1 .header-banner button {
+	    height: 54px;
+	    width: 210px;
+	    font-size: 20px;
+	}
+	.sub-section-1 .header-banner button .sale {
+    	font-size: 18px;
+	}
+	.section-2 .our-mission-img .border {
+		left:44px;
+	}
+	.section-2 .our-mission-img {
+    	left: 20px;
+    }
+    .section-2 .our-mission h4{
+    	font-size: 45px;
+    }
+    .section-7 {
+    	padding-bottom: 160px;
+	}
+    .section-7 .new-easy-way h4 {
+    	font-size: 48px !important;
+	}
+	.section-7 .new-easy-way-img img {
+    	margin: 160px auto 60px;
+    	width: 485px;
+    	height: 275px;
+	}
+	.sub-section-7 {
+    	margin-top: -170px;
+	}
+	.section-8 {
+    	margin-top: 50px;
+	}
+	.section-8 .golteum-token-features p {
+    	font-size: 22px !important;
+	}
+	.section-9 .card button {
+    	font-size: 15px !important;
+    	padding: 11px 13px;
+	}
+	.section-10 .buyBtn a {
+    	font-size: 16px;
+	}
+	.section-11 .distributionInner {
+    	padding: 75px 3%;
+	}
+	.section-12 .col-lg-4 a {
+	    width: 80%;
+	    font-size: 15px;
+	    padding: 15px 20px;
+	}
+	.section-13 h2{
+		font-size: 37px;
+	}
+	.section-13 h2 span{
+		font-size: 40px !important;
+	}
+	.section-13 .image img {
+    	width: 170px;
+	}
+	.section-13 .block{
+		width:100%;
+	}
+	.section-13 h3{
+		font-size: 16px ;	
+	}
+	.section-13 h4{
+		font-size: 21px !important;
+	}
+	.section-13 p {
+    	font-size: 15px !important;
+	}
+	.section-15 .road-map-card p {
+    	width: 90%;
+    	font-size: 14px !important;
+	}
+	.section-14 .partnership img {
+    	width: 100px;
+    	height: 60px;
+	}
+	.section-15 .phase-1 {
+    	margin-top: 179px;
+    	margin-left: -70px;
+    	margin-bottom: 38px;
+	}
+	.section-15 .road-map-card-header h4 {
+    	font-size: 55px !important;
+	}
+	.section-15 .road-map-card h4 {
+    	font-size: 30px !important;
+	}
+	.section-16 .fotter-token {
+    	padding: 0;
+	}
+	.section-16 .logo img {
+    	width: 230px;
+	}
+	.section-16 a {
+    	font-size: 19px;
+	}
+
+@media (max-width:768px){
+	p{
+		font-size: 18px !important;
+	}
+	h5{
+		font-size:26px !important;
+	}
+	.email p {
+    	font-size: 15px !important;
+    }
+	#toggle{
+		display:block !important;
+		padding-right: 50px;
+	}
+	.navbar .container-fluid{
+		padding: 0px;
+	}
+	.nav-link{
+		text-align: center;
+	}
+	form{
+		justify-content: center;
+	}
+	header .navbar-brand {
+    	padding-left: 30px;
+	}
+	header nav form button {
+    	width: 120px;
+    	border-radius: 10px!important;	
+	}
+	header nav form button .signup_arrow {
+    	margin-left: 10px;
+    	font-size: 14px;
+	}
+	.navbar-collapse{
+		background: #0009;
+	    padding-bottom: 25px;
+	}
+	.sub-section-1{
+		margin-top:3rem;
+		margin-bottom: 5rem;
+	}
+	.sub-section-1 .header-banner {
+    	margin-bottom: 4rem;
+    	margin-top: 4rem;
+    	padding-left: 22px;
+	}
+	.sub-section-1 .header-banner .token .tokens{
+		font-size: 16px;
+	}
+	.section-2{
+		margin-bottom: 2rem;
+	}
+	.section-2 .our-mission h4{
+		width:100%;
+		font-size: 33px !important;
+	}
+	.section-2 .our-mission{
+		margin: 0px;
+	}
+	.sub-section-1 .header-banner-img{
+		text-align: center;
+		margin-top: 60px;
+		height:500px;
+	}
+	.section-2 .our-mission-img{
+		left:0px;
+	}
+	.section-3{
+		padding-bottom: 2rem;
+	}
+	.section-3 .geltum-ecosystem {
+    	max-width: 95%;
+	}
+	.section-3 .card button {
+    	font-size: 18px;
+    	padding: 9px 8px;
+	}
+	.section-2 .our-mission-img img {
+    	height: 475px;
+	}
+    .section-4 .Impact-Story {
+	    width: 100%;
+	    margin: 2rem auto 2rem;
+	}
+	.sub-section-5 .Solve-keyproblems-card .card{
+		margin-bottom: 15px;
+		height:420px;
+	}
+	.sub-section-6 .golteum-platform-card .card h5{
+		font-size: 26px !important;
+	}
+	.sub-section-5 .Solve-keyproblems-card .main{
+		height:300px;
+	}
+	.section-6 {
+    	margin-top: 50px;
+    }
+    .section-6 .golteum-platform {
+    	margin: 65px auto 200px;
+	}
+	.section-6 .golteum-platform span {
+    	font-size: 22px !important;
+	}
+	.section-6 .golteum-platform h4 {
+    	font-size: 34px!important;
+	}
+	.sub-section-6 .card p {
+    	font-size: 17px !important;
+	}
+	.sub-section-6 .card h5 {
+    	font-size: 24px!important;
+	}
+	.sub-section-6 {
+    	margin-top: -160px;
+	}
+    .section-7{
+    	padding-bottom: 90px;
+    }
+    .section-7 .new-easy-way {
+    	margin: 45px auto 50px;
+	}
+	.section-7 .new-easy-way h4 {
+    	font-size: 40px !important;
+	}
+	.section-7 .new-easy-way-img {
+		text-align: center;
+	}
+	.section-7 .new-easy-way-img img{
+		width: 575px;
+    	height: 300px;
+    	margin: 0px auto 60px;
+	}
+	.section-7 .new-easy-way p {
+    	font-size: 18px !important;
+	}
+	.sub-section-7 {
+    	margin-top: -124px;
+	}
+	.sub-section-7 .golteum-token-card{
+    	width: 256px;
+	}
+	.section-8 {
+    	margin-top: 4rem;
+	}
+	.section-8 .golteum-token-features h4 {
+    	font-size: 40px !important;
+	}
+	.section-8 .golteum-token-features p {
+    	font-size: 19px !important;
+	}
+	.section-9 .token-features-card .card img {
+    	width: 55px;
+    	height: 50px;
+	}
+	.section-9 .token-features-card .card h5 {
+    	font-size: 22px !important;
+	}
+	.section-9 .token-features-card .card p {
+    	font-size: 15px !important;
+	}
+	.section-9 .token-features-card .card:hover h5{
+		font-size: 25px !important;
+		font-family: mySecondFont;
+	}
+	.section-9 .card button {
+    	padding: 10px 18px;
+    	font-size: 17px !important;
+	}
+	.section-9 .card p {
+    	font-size: 14px !important;
+	}
+	.section-10 h2{
+		font-size: 45px !important;
+	}
+	.section-10 .image h3{
+		font-size: 24px;
+		top:50px;
+	}
+	.section-10 p{
+		font-size: 19px;
+		width:80%;
+	}
+	.section-10 .toke-list{
+		width:95%;
+	}
+	.section-10 .buyBtn a{
+		padding: 13px 22px;
+	}
+	.section-11 h2{
+		font-size: 33px;
+		max-width: 95%;
+	}
+	.section-11 h2 span{
+		font-size: 40px !important;
+	}
+	.section-11 .distributionInner{
+		padding: 75px 0%;
+	}
+	.section-11 .distributionInner .detailBlock .currencies{
+		top:-58px;
+	}
+	.section-11 .distributionInner .detailBlock ul li p{
+		font-size: 15px !important;
+	}
+	.section-12 {
+    	background: linear-gradient(to bottom, #f9f9f9 40%, #fff 30% );
+	}
+	.section-12 h2{
+		font-size: 37px;
+	}
+	.section-12 h2 span{
+		font-size: 37px;
+	}
+	.section-12 .col-lg-4 .block {
+		height:90% !important;
+	}
+	.section-12 .col-lg-4 .block h3{
+		font-size: 23px !important;
+	}
+	.section-12 .col-lg-4 .block h4{
+		font-size: 16px !important;
+	}
+	.section-12 .goldIndustryInner {
+    	padding: 0 0%;
+	}
+	.section-12 .col-lg-4 .block p {
+    	font-size: 15px !important;
+	}
+	.section-12 .col-lg-4 a {
+    	margin-top: 31px;
+    	padding: 10px 0px;
+	}
+	.section-13{
+		margin-top:2rem;
+	}
+	.section-13 h2{
+		font-size: 37px;
+		margin-bottom: 0px;
+	}
+	.section-13 h2 span{
+		font-size: 40px !important;
+	}
+	.section-13 .image img {
+    	width: 170px;
+	}
+	.section-13 .block{
+		width:100%;
+		padding-top:80px;
+	}
+	.section-13 h3{
+		font-size: 16px ;	
+	}
+	.section-13 h4{
+		font-size: 21px !important;
+	}
+	.section-13 p {
+    	font-size: 15px !important;
+	}
+	.section-14 {
+    	margin: 37px auto;
+	}
+	.section-14 .partnership span {
+    	font-size: 17px !important;
+	}
+	.section-14 .partnership h4 {
+    	font-size: 46px !important;
+	}
+	.section-14 .partnership p {
+    	width: 100%;
+    	font-size: 16px !important;
+	}
+	.section-14 .partnership-img img{
+		max-width: 50%;
+	} 
+	.section-14 .partnership .card {
+		margin-top:10px;
+	}
+	.section-14 .partnership img {
+    	width: 85px;
+    	height: 60px;
+	}
+	.section-15{
+		padding-bottom: 55px;
+		display: none;
+	}
+	section.roadMap {
+		display: block;
+	}
+	.section-16 .fotter-token{
+		text-align: end;
+	}
+	.section-16 .fotter-token a{
+		font-size: 16px;
+	}
+	.section-16 .logo img{
+		width:200px;
+	}
+	.section-16 h2{
+		font-size: 23px;
+	}
+	.section-16 .privacy a {
+    	font-size: 14px;
+	}
+	.section-17 .accordion h2 button {
+    	font-size: 16px;
+	}
+	.section-17 h4 {
+    	font-size: 50px !important;
+	}
+	footer p{
+		font-size: 17px !important;
+	}
+}
+@media only screen and (max-width: 600px){
+	p{
+		font-size: 15px !important;
+		text-align:justify;
+	}
+	h4{
+		font-size: 24px !important;
+	}
+	.card{
+		padding: 0px !important;
+	}
+	.navbar img{
+		width:130px;
+	}
+	.email p{
+		font-size: 13px !important;
+		text-align: revert !important;
+	}
+	.email span{
+		font-size: 13px !important;
+	}
+	.token-price {
+		width: 100%;
+		margin: auto;
+	}
+	header .main-line{
+		height:35px;
+	}
+	header .main-line .line{
+		margin-top: 8px;
+	}
+	.sub-section-1 .number-list .item{
+		height:50px;
+	}
+	.sub-section-1 .header-banner{
+		padding-left:0px;
+		text-align:center; 
+	}
+	.sub-section-1 .header-banner .token .tokens{
+		padding: 9px 10px;
+		font-size: 14px;
+	}
+	.sub-section-1 .header-banner h1{
+		font-size: 26px !important;
+	}
+	.sub-section-1 .header-banner p{
+		margin-right: 0px;
+		font-size: 15px !important;
+		text-align: initial;
+	}
+	.sub-section-1 .header-banner-img{
+		height:260px;
+	}
+	.sub-section-1 .header-banner button {
+	    height: 45px;
+	    width: 200px;
+	    font-size: 18px;
+	}
+	.section-2 {
+    	margin-bottom: 2rem;
+	}
+	.section-2 .our-mission h4 {
+    	font-size: 24px !important;
+	}
+	.section-2 .our-mission-img .border{
+		left:30px;
+		top:3%;
+	}
+	.section-2 .our-mission-img img {
+    	height: 360px;
+    	width: 93%;
+	}
+	.section-2 .our-mission{
+		margin-top: 2rem;
+		text-align:center;
+	}
+	.section-3 .geltum-ecosystem h4,.section-3 .geltum-ecosystem h4 span {
+    	font-size: 27px !important;
+	}
+	.section-3 .geltum-ecosystem{
+		max-width:100%;
+	}
+	.section-3 .card button {
+    	font-size: 16px;
+    	padding: 8px 6px;
+	}
+	#section-3-slider{
+		display: none;
+	}
+	.slider-thre{
+		display: block;
+	}
+	.slider-three .card{
+		height: 340px;
+		overflow: hidden;
+	}
+	.section-4 .Impact-Story h2{
+		font-size: 23px;
+	}
+	.section-5 h2{
+		font-size: 23px;
+	}
+	.sub-section-5{
+		display: none;
+	}
+	.sub-section-5 .card img {
+	    width: 60px;
+	    height: 50px;
+	}
+	.sub-section-5-slider-four{
+		display: block;
+	}
+	.sub-section-5-slider-four .slider-three .card{
+		height:300px;
+		overflow: hidden;
+	}
+	.section-4 .Impact-Story p{
+		line-height: 25px !important;
+		font-size: 14px !important;
+		text-align: initial;
+	}.sub-section-5 .Solve-keyproblems-card .card {
+    	height: 375px;
+	}
+	.section-6 .golteum-platform{
+		text-align: center;
+	}
+	.section-6 .golteum-platform span{
+		font-size: 16px !important;
+	}
+	.section-6 .golteum-platform h4{
+		font-size: 22px !important;
+	}
+	.section-6 .golteum-platform {
+    	margin: 65px auto 160px;
+	}
+	.section-6 .golteum-platform p {
+    	text-align: initial;
+	}
+	.sub-section-6 {
+    	margin-top: -125px;
+	}
+	.sub-section-6 .card p {
+    	font-size: 15px !important;
+	}
+	.sub-section-6{
+		display: none;
+	}
+	.sub-section-6-slider-five{
+		display: block;
+	}
+	.sub-section-6-slider-five .slider-two .card{
+		height:260px;
+		overflow: hidden;
+	}
+	.section-7 {
+		text-align: center;
+    	margin-top: 2rem;
+    	padding-bottom: 75px;
+	}
+	.section-7 .new-easy-way h4 {
+    	font-size: 21px !important;
+	}
+	.section-7 .new-easy-way p {
+    	color: #fff;
+    	text-align: initial;
+    	font-size: 15px !important;
+	}
+	.section-7 .new-easy-way span {
+    	font-family: mySecondFont;
+    	font-size: 28px !important;
+	}
+	.section-7 .new-easy-way-img img{
+		height:195px;
+		margin: 0px auto 60px;
+	}
+	.sub-section-7{
+		display: none;
+		margin-top: -104px;
+	}
+	.sub-section-7-slider{
+		margin-top: -104px;
+		display: block;
+	}
+	.sub-section-7-slider .card{
+		height:220px;
+		overflow: hidden;
+	}
+	.section-9{
+		display: none;
+	}
+	.section-9-slider{
+		display: block;
+	}
+	.section-9-slider .card{
+		height:350px;
+		overflow: hidden;
+	}
+	.section-8 {
+    	margin-top: 2rem;
+	}
+	.section-8 .golteum-token-features h4 {
+    	font-size: 24px !important;
+	}
+	.section-8 .golteum-token-features p {
+    	font-size: 15px !important;
+    	text-align: initial;
+	}
+	.section-10 h2 {
+    	font-size: 33px !important;
+	}
+	.section-10 p{
+		width:100%;
+		font-size: 16px !important;
+	}
+	.section-10 .toke-list .list-item{
+		font-size: 12px;
+	}
+	.section-10 ul li img{
+		width:45px;
+	}
+	.section-10 .toke-list {
+    	width: 100%;
+	}
+	.section-10 .toke-list .list-item img {
+    	margin-right: 40px;
+	}
+	.section-10 .toke-list .list-item span{
+		font-size: 12px;
+	}
+	.section-10 .image {
+    	width: 95%;
+	}
+	.section-10 .image h3{
+		font-size: 18px;
+		top:0px;
+		margin-bottom: 25px;
+	}
+	.section-10 .buyBtn a {
+    	font-size: 14px;
+    	padding: 12px 12px;
+	}
+	.section-11 {
+    	padding: 60px 0 40px;
+	}
+	.section-11 .distributionInner {
+	    padding-left: 0;
+	    padding-right: 0;
+	    padding-top: 0;
+    	flex-wrap: wrap;
+	}
+	.section-11 h2 {
+    	font-size: 23px;
+    	max-width:100%;
+    	margin-bottom: 30px;
+	}
+	.section-11 h2 span {
+    	font-size: 23px !important;
+	}
+	.section-11 .distributionInner .detailBlock .currencies {
+	    width: 100%;
+	    left: 0%;
+	    top: 0px;
+	    position: relative;
+	}
+	.section-11 .distributionInner .detailBlock ul{
+		margin-top:20px;
+	}
+	.section-11 .distributionInner .detailBlock {
+    	width: 100%;
+    	margin-right: 0px;
+	}
+	.section-11 .distributionInner .detailTable {
+	    width: 90%;
+	    margin: 0 auto;
+	    margin-top: 2px;
+	    padding-top: 10px;
+	}
+	.section-11 .distributionInner .detailBlock ul li h5 {
+    	font-size: 11px !important;
+	}
+	.section-11 .distributionInner .detailBlock ul li h3 {
+    	font-size: 17px;
+	}
+	.section-11 .distributionInner .detailBlock ul {
+    	padding: 12px 0;
+	}
+	.section-11 .distributionInner .detailBlock .currencies .head {
+    	font-size: 18px;
+	}
+	.section-11 .distributionInner .detailBlock .taglist h6 {
+    	font-size: 14px;
+	}
+	.section-11 .distributionInner .detailBlock .tagline {
+    	font-size: 10px;
+	}
+	.section-11 .distributionInner .presaleBtn a {
+    	width: 195px;
+    	height: 50px;
+    	padding: 0px;
+    	font-size: 19px;
+    }
+    .section-12 {
+    	background: linear-gradient(to bottom, #f9f9f9 25%, #fff 30% );
+	}
+	.section-12 h2{
+		font-size:25px;
+		line-height: 33px;
+		margin: 0 0 75px 0;
+	}
+	.section-12 h2 span {
+    	font-size: 23px;
+	}
+	.section-12 .goldIndustryInner {
+    	margin-top: 45px;
+	}
+	.section-12 .goldIndustryInner {
+    	padding: 0px 0%;
+	}
+	.section-12 .col-lg-4 .block .icon-3 {
+    	width: 60px;
+    	height: 62px;
+	}
+	.section-12 .col-lg-4 .block .icon {
+    	margin-top: 0px;
+	}
+	.section-13 {
+    	margin-top: 2rem;
+    	background: linear-gradient(0deg, #0b0f17 68%, #FEC844 35%);
+	}
+	.section-13 h2 {
+    	font-size: 23px;
+	}
+	.section-13 h2 span {
+    	font-size: 28px !important;
+	}
+	.section-13 .block {
+    	padding-top: 40px;
+	}
+	.section-13 p {
+		text-align: center!important;
+	}
+	#section-13-slider{
+		display: none;
+	}
+	#section-13-slider-slide{
+		display: block;
+	}
+	#section-13-slider-slide img{
+		margin: auto;
+	}
+	.section-14 {
+    	margin: 36px auto;
+    }
+    .section-14 .partnership-img img {
+    	max-width: 70%;
+	}
+	.section-14 .partnership .card {
+    	text-align: center;
+	}
+	.section-14 .partnership img {
+    	width: 69px;
+    	height: 42px;
+	}
+    .section-14 .partnership h4 {
+    	color: #000 !important;
+    	font-size: 33px !important;
+	}
+	.section-14 .partnership span{
+		font-size: 17px !important;
+	}
+	.section-14 .partnership p{
+		width:100%;
+		font-size: 16px !important;
+	}
+	section.roadMap .roadMapInner .heading h1 {
+    	font-size: 41px;
+	}
+	section.roadMap .roadMapInner .phases p {
+    	font-size: 12px !important;
+	}
+	section.roadMap .roadMapInner .phases .block {
+    	margin-bottom: -128px;
+	}
+	section.roadMap .roadMapInner .phases .phase2, section.roadMap .roadMapInner .phases .phase3, section.roadMap .roadMapInner .phases .phase4 {
+    	margin-top: 118px;
+	}
+	section.roadMap .roadMapInner .phases h3 {
+    	margin-top: 119px;
+	}
+	section.roadMap .roadMapInner {
+    	margin-bottom: 169px;
+	}
+	section.roadMap .roadMapInner .presaleBtn a {
+	    width: 170px;
+	    font-size: 16px;
+	    padding: 7px 0px;
+	}
+	.section-16 {
+		text-align: center;
+	}
+	.section-16 .fotter-token{
+		padding-top: 16px;
+		text-align: center;
+	}
+	.section-16 .social{
+		justify-content: center;
+		margin-bottom: 10px !important;
+	}
+	.section-16 .fotter-token a {
+    	font-size: 15px;
+	}
+	footer p {
+    	font-size: 15px !important;
+	}
+	.section-17{
+		height:730px;
+	}
+	.section-17 h4 {
+    	font-size: 40px !important;
+	}
+	.section-17 .accordion h2 button {
+    	font-size: 14px;
+	}
+	.section-17 h4 {
+    	padding-top: 45px;
+	}
+	.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+	    border-radius: 0;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+}
